@@ -1,4 +1,7 @@
 <?php
+ini_set('error_reporting', E_ALL);
+use \Longman\TelegramBot\Telegram;
+use Longman\TelegramBot\Exception\TelegramException;
 // Load composer
 require __DIR__ . '/vendor/autoload.php';
 
@@ -7,13 +10,13 @@ $BOT_NAME = 'bookingvilla_bot';
 $hook_url = 'https://bot-bookingbot.7e14.starter-us-west-2.openshiftapps.com/hook.php';
 try {
     // Create Telegram API object
-    $telegram = new Longman\TelegramBot\Telegram($API_KEY, $BOT_NAME);
+    $telegram = new Telegram($API_KEY, $BOT_NAME);
 
     // Set webhook
     $result = $telegram->setWebhook($hook_url);
     if ($result->isOk()) {
         echo $result->getDescription();
     }
-} catch (Longman\TelegramBot\Exception\TelegramException $e) {
+} catch (TelegramException $e) {
     echo $e;
 }
