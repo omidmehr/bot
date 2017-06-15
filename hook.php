@@ -11,6 +11,7 @@ try {
     $resArr = json_decode($res);
 
     $chat_id = $resArr['result'][0]['message']['chat']['id'];
+    echo $chat_id;
     \Longman\TelegramBot\Request::sendMessage(['chat_id' => $chat_id, 'text' => 'Your utf8 text ًںکœ ...']);
 
 } catch (Longman\TelegramBot\Exception\TelegramException $e) {
