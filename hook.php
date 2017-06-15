@@ -9,6 +9,8 @@ try {
     $telegram = new Longman\TelegramBot\Telegram($API_KEY, $BOT_NAME);
     $res = file_get_contents("php://input");
     $resArr = json_decode($res);
+    var_dump($telegram);
+    echo '<br>';
 var_dump($resArr);
     $chat_id = $resArr['result'][0]['message']['chat']['id'];
     echo $chat_id;
