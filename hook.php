@@ -9,18 +9,15 @@ require __DIR__ . '/vendor/autoload.php';
 
 $API_KEY = '354937959:AAGorUCSKKU0uQNeLEkDUkkQROnlZ_yM6hs';
 $BOT_NAME = 'bookingvilla_bot';
+
 try {
     // Create Telegram API object
     $telegram = new Telegram($API_KEY, $BOT_NAME);
-    $res = file_get_contents("php://input");
-    $resArr = json_decode($res,true);
-    var_dump($telegram);
-    echo '<br>';
-var_dump($resArr);
-//    $chat_id = $resArr['result'][0]['message']['chat']['id'];
-//    echo $chat_id;
-//    Request::sendMessage(['chat_id' => $chat_id, 'text' => 'Your utf8 text ًںکœ ...']);
-
+    $update = file_get_contents('php://input');
+    $update = json_decode($update, true);
+    var_dump($update);
+    // Handle telegram webhook request
+    $telegram->handle();
 } catch (TelegramException $e) {
     // Silence is golden!
     // log telegram errors
