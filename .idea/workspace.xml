@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d28fca1-23f9-4a43-a3f4-d1d86db7fabb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hook.php" afterPath="$PROJECT_DIR$/hook.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/set.php" afterPath="$PROJECT_DIR$/set.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +20,8 @@
       <file leaf-file-name="hook.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hook.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state relative-caret-position="323">
+              <caret line="19" column="44" lean-forward="false" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
               <folding>
                 <element signature="e#41#74#0#PHP" expanded="true" />
               </folding>
@@ -177,12 +175,12 @@
       <option name="presentableId" value="Default" />
       <updated>1497519451967</updated>
       <workItem from="1497519453236" duration="7254000" />
-      <workItem from="1497673023464" duration="134000" />
+      <workItem from="1497673023464" duration="1045000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7388000" />
+    <option name="totallyTimeSpent" value="8299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
@@ -310,8 +308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hook.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="323">
+          <caret line="19" column="44" lean-forward="false" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding>
             <element signature="e#41#74#0#PHP" expanded="true" />
           </folding>
