@@ -13,8 +13,8 @@ $BOT_NAME = 'bookingvilla_bot';
 try {
     // Create Telegram API object
     $telegram = new Telegram($API_KEY, $BOT_NAME);
-    $update = file_get_contents('php://input');
-    $update = json_decode($update, true);
+    $res = Request::getInput();
+    $update = json_decode($res);
     var_dump($update);
     // Handle telegram webhook request
     $telegram->handle();

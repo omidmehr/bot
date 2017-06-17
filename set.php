@@ -1,5 +1,6 @@
 <?php
 ini_set('error_reporting', E_ALL);
+use \Longman\TelegramBot\Request;
 use \Longman\TelegramBot\Telegram;
 use Longman\TelegramBot\Exception\TelegramException;
 // Load composer
